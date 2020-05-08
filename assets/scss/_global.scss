@@ -1,0 +1,8 @@
+.neonatal{
+    &__list{
+        border-bottom: 1px solid #ddd;
+        @media (min-width: 768px) { 
+            border-bottom: 0;
+        }
+    }
+}

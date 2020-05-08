@@ -1,0 +1,16 @@
+.btn{
+    &:focus,
+    &:active{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    &-default{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        color: #000;
+        &:hover{
+            color: #fff;
+            background-color: var(--blue);
+        }
+    }
+}

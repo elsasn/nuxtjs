@@ -1,0 +1,48 @@
+.navbar{
+    &__top{
+        .navbar-nav{
+            .nav-link{
+                padding: 1rem;
+                &:hover{
+                    background-color: #E7E7E7 !important;
+                    color: #000000 !important
+                }
+            }
+        }
+    }
+    &__bottom{
+        background-color: #e7e7e7 !important;
+        border-bottom: 2px solid #FFB6C1;
+        .navbar-nav{
+            .nav-link{
+                color: #555555 !important;
+                font-size: .75rem;
+                &.nuxt-link-exact-active{
+                    background-color: #FFB6C1;
+                }
+            }
+        }
+    }
+}
+.header{
+    &__mobile{
+        .mobile{
+            &__menu{
+                background: #fff;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 99;            
+                &--item{
+                    border-bottom: 1px solid #ddd;
+                    color: #000;
+                    &.nuxt-link-exact-active{
+                        border-bottom: 2px solid #FFB6C1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.modal{
+    &.no-border{
+        .modal{
+            &-header{
+                border-bottom: 0 !important;
+            }
+            &-footer{
+                border-top: 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.multiselect{
+    &__single,
+    &__input,
+    &__option{
+        font-size: .875rem !important;
+    }
+    &__option{
+        &--highlight{
+            background: var(--blue) !important;
+            outline: none;
+            color: #fff;
+        }
+    }
+    &__tags{
+        border-color: #ced4da !important;
+    }
+    &__content{
+        &-wrapper{
+            border-color: #ced4da !important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.slide-right-enter-active {
+    transition: all .3s cubic-bezier(0.57, 0.01, 0.01, 0.93);
+}
+
+.slide-right-leave-active {
+    transition: all .3s cubic-bezier(0.57, 0.01, 0.01, 0.93);
+}
+
+.slide-right-enter,
+.slide-right-leave-to{
+    transform: translateX(-100%);
+}

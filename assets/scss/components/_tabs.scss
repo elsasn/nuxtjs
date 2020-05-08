@@ -1,0 +1,13 @@
+.nav-tabs{
+    border-bottom: 0;
+    .nav-link{
+        border: 0 !important;
+        color: #000;
+        text-transform: uppercase;
+        font-size: .75rem !important;
+        &.active{
+            color: var(--blue);
+            border-bottom: 3px solid var(--blue) !important;
+        }
+    }
+}

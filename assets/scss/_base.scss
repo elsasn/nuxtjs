@@ -1,0 +1,8 @@
+body{
+    font-size: .875rem;
+}
+a{
+    &:hover{
+        text-decoration: none !important;
+    }
+}

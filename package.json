@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-2",
+  "version": "1.0.0",
+  "description": "My neat Nuxt.js project",
+  "author": "Indra Ardiansah",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/moment": "^1.6.0",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0",
+    "exceljs": "^3.9.0",
+    "file-saver": "^2.0.2",
+    "moment": "^2.25.3",
+    "nuxt": "^2.0.0",
+    "pdfmake": "^0.1.65",
+    "qs": "^6.9.4",
+    "querystring": "^0.2.0",
+    "v-calendar": "^1.0.6",
+    "vue-multiselect": "^2.1.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2"
+  }
+}
