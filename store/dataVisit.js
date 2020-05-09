@@ -48,7 +48,7 @@ export const state = () => ({
         })
   
         // ubah data api menjadi data untuk table
-        const datapasien = data.data.map((x,i) => ({
+        const datavisit = data.data.map((x,i) => ({
           no: i + 1,
           icd_10_primary: Object.keys(x.data_catatan.icd_10_primary).join(', '),
           icd_10_secondary: Object.keys(x.data_catatan.icd_10_secondary).join(', '),
@@ -58,29 +58,9 @@ export const state = () => ({
           ...x.data_registrasi
         }))
   
-        // const statistikPasien = {
-        //   pasienBaruLama: {
-        //     baru: data.data.filter(x => x.data_pasien.status == 'Baru').length,
-        //     lama: data.data.filter(x => x.data_pasien.status == 'Lama').length
-        //   },
-        //   pasienJnsKelamin: {
-        //     laki: data.data.filter(x => x.data_pasien.kelamin == 'Laki - laki').length,
-        //     perempuan: data.data.filter(x => x.data_pasien.kelamin == 'Perempuan').length
-        //   },
-        //   totalPasien: data.data.length,
-        //   penjamin: data.data.reduce(function(map, x) {
-        //     let penjamin = x.data_pasien.penjamin
-        //     let total = +1
-        //     map[penjamin] = (map[penjamin] || 0) + total
-        //     return map
-        //   }, {})
-        // }
-  
-        // console.log('stat', statistikPasien)
-        // commit('SET_STATISTIK_PASIEN', statistikPasien)
-        commit('SET_DATA_PASIEN', datapasien)      
+        commit('SET_DATA_PASIEN', datavisit)      
       } catch (error) {
-        new Error('Error getListPasien', error)
+        new Error('Error getListDataVisit', error)
       }
     }
   }
