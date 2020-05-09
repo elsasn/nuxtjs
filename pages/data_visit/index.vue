@@ -8,7 +8,7 @@
      <!-- bagian filter dan export -->
     <div class="d-block clearfix mb-4">
       <div class="float-left">
-        <b-form inline>
+        <!-- <b-form inline>
           <label for="date-filter mr-4"><b>Tanggal</b></label>
           <b-form-datepicker 
             class="ml-2 mr-4" 
@@ -19,7 +19,7 @@
             v-model="value">
           </b-form-datepicker>
           <b-button class="ml-4" variant="primary" @click="filterShow = !filterShow">{{ filterShow ? 'Tutup Filter' : 'Buka Filter'}}</b-button>
-        </b-form>
+        </b-form> -->
       </div>
       <div class="float-right">
       <button class="btn btn-primary mr-2" @click="toPdf"><i class="fas fa-print mr-2"></i>PDF Summary</button>
@@ -41,7 +41,7 @@ import pdfVersion1 from '@/export/pdf-version-1'
 import pdfVersion2 from '@/export/pdf-version-2'
 import excelVersion1 from '@/export/excel-version-1'
 import excelVersion2 from '@/export/excel-version-2'
-import TableRegistrasi from '@/components/table/TabelDataVisit'
+import TabelDataVisit from '@/components/table/TableDataVisit'
 import { mapState } from 'vuex'
 
 export default {
@@ -49,7 +49,7 @@ export default {
     titleTemplate: 'Laporan Visit Pasien'
   },
   components: {
-    TableRegistrasi
+    TabelDataVisit
   },
   async fetch({store}) {
     console.log("fetching..")
