@@ -20,7 +20,7 @@
     "moment": "^2.25.3",
     "nuxt": "^2.0.0",
     "pdfmake": "^0.1.65",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "querystring": "^0.2.0",
     "v-calendar": "^1.0.6",
     "vue-multiselect": "^2.1.6"
